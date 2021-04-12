@@ -1,0 +1,30 @@
+jobs:
+  include:
+  - language: python
+    python: 3.8
+    script:
+    - npm run python-install
+  - language: node_js
+    node_js:
+    - 14
+    services:
+    - postgresql
+    addons:
+      postgresql: '10'
+    dist: xenial
+    notifications:
+      email:
+        on_success: change
+        on_failure: always
+    install:
+    - npm ci
+    before_script:
+    - npm run build-client
+    deploy:
+      skip_cleanup: true
+      provider: heroku
+      app: yinsong01
+      on:
+        branch: master
+      api_key:
+        secure: DWSnr5Y+jb4lYmbz1+5Oiz33wM8/+A++Gkfq4bXAiFiWBVgLOwNcS+ngGuqtJebtZRmrNpnwvbk+DeWFIvxMZNjA5UMUa5FHEe+85g9L3Kk/ieQoIIgCEkjRKipBJxenyAaKAnJHpZCsm+ddYfZltkHBHE9t+GpNZfBpIiUegSOhgpFCQ320OBFCmnRTJZC+d3B3N3QTDdlHOxrCi2fkj+dusSBmlCqC9jO5s8qdGP8EQmZ1GHgeR66VanEguVMLvO+t7It5AMoKYk766tYjax3ZVcD0ON+eaZaX8u5RGpnfagPZQAATNQEFBmt7MtvtkyaEOEygntry2+HTQEepe81BKuXUeot6ijBD8LcufawGJ+43ftRp+vkK3sMTB56bvGtYfoQK36lG5OTwSisxwyGzcLBT1C7iQzP/z/yOKKmLYDSAaxbFvXiBCDM9JFY1giiPnMv5iPHY0Dwmk0PlMzlAwHAXKUncxDHTx3vUPEfaNu6WLBPAIC2Fz0kDZr8vyXx3ecJ2a29v4jYymQglqEznHX4UYLa7y/SsfW8e5/ciiARGY4hc0/K8GdKgTqLkAkgUZVuMyLFVi6K5T8xE8vnMiuHaq/nw4suUhgc66e7Gt1ECEvtGjgjDRekCYOhODkgGE4JkIvCWmWB+e2ELTbjIy5pR5uw295+H1vPg8Hk=
