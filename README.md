@@ -8,6 +8,7 @@ actually being used.
 ## To start on localhost:
 
 npm install
+
 npm run python-install
 
 For Windows:
