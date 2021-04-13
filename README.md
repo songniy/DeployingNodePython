@@ -1,7 +1,6 @@
 ## Intro
-This is a nodeJS boilerplate application utilizing an express backend that calls
-a python script by promisifying exec. It is set up to be deployed to Heroku
-with Travis-CI.
+This is a nodeJS boilerplate application utilizing an express backend that can execute
+a python script. It is set up to be deployed to Heroku with Travis-CI.
 
 ## To start on localhost:
 The libraries are there only for demonstration purposes and are not
