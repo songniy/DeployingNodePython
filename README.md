@@ -18,6 +18,7 @@ npm run build-watch-client
 npm run start-server
 
 
+
 For All Others:
 
 npm run start-dev
@@ -25,7 +26,7 @@ npm run start-dev
 Then go to localhost:8080
 
 ## To Deploy
-If you are new to deploying, I highly suggest going to to his medium article to get explanations:
+If you are new to deploying, I highly suggest going to to his medium article to get started:
 
 https://songniy.medium.com/nodejs-with-python-deployment-using-heroku-and-travis-ci-ea5d5fcdafc3
 
