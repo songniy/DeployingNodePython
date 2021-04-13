@@ -43,5 +43,7 @@ Go into .git/config and make sure your [travis] slug and url settings are all co
 
 You may need to go into travis-ci.com to adjust some settings if travis-ci is not automatically picking up your github changes for this new repo. Also don't forget to add integrations for travis to your github repo.
 
+Here is a linked to what it should look like once you are fully deployed. Of course your url will look different:
+https://yinsong01.herokuapp.com/
 
 Thanks for checking this out and let me know if you have any problems or thoughts!
