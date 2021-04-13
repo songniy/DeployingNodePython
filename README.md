@@ -12,7 +12,7 @@ npm install
 npm run python-install
 
 For Windows Users:
-
+-------------------------------------------
 npm run build-watch-client
 
 npm run start-server
@@ -20,7 +20,7 @@ npm run start-server
 
 
 For All Others:
-
+-------------------------------------------
 npm run start-dev
 
 Then go to localhost:8080
