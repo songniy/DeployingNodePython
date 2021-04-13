@@ -11,13 +11,18 @@ npm install
 
 npm run python-install
 
-For Windows:
+For Windows Users:
+
 npm run build-watch-client
+
 npm run start-server
-Then go to localhost:8080
+
 
 For All Others:
+
 npm run start-dev
+
+Then go to localhost:8080
 
 ## To Deploy
 If you are new to deploying, I highly suggest going to to his medium article to get explanations:
