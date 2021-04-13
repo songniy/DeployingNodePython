@@ -1,31 +1,39 @@
 ## Intro
-This is a nodeJS boilerplate application utilizing an express backend that calls
-a python script by promisifying exec. It is set up to be deployed to Heroku
-with Travis-CI.
+This is a nodeJS boilerplate application utilizing an express backend that can execute
+a python script. It is set up to be deployed to Heroku with Travis-CI.
+
+note: The python libraries are there only for demonstration purposes and are not
+actually being used.
 
 ## To start on localhost:
-The libraries are there only for demonstration purposes and are not
-actually being used.
+
 npm install
+
 npm run python-install
 
-For Windows:
+For Windows Users:
+-------------------------------------------
 npm run build-watch-client
+
 npm run start-server
-Then go to localhost:8080
+
+
 
 For All Others:
+-------------------------------------------
 npm run start-dev
 
+Then go to localhost:8080
+
 ## To Deploy
-If you are new to deploying, I highly suggest going to to his medium article to get explanations:
+If you are new to deploying, I highly suggest going to to his medium article to get started:
 
 https://songniy.medium.com/nodejs-with-python-deployment-using-heroku-and-travis-ci-ea5d5fcdafc3
 
 ## OR
 
 create a heroku app
-add the node/js,python, and aptfile buildpacks.
+add the node/js, python, and aptfile buildpacks.
 
 go to .travis.yml file
 change the app to your app's name and the branch to the git hub branch you want to deploy off of.
