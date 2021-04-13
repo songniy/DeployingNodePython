@@ -33,7 +33,7 @@ https://songniy.medium.com/nodejs-with-python-deployment-using-heroku-and-travis
 ## OR
 
 create a heroku app
-add the node/js,python, and aptfile buildpacks.
+add the node/js, python, and aptfile buildpacks.
 
 go to .travis.yml file
 change the app to your app's name and the branch to the git hub branch you want to deploy off of.
